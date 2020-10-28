@@ -1,0 +1,30 @@
+{
+  "name": "my-mock",
+  "version": "1.0.0",
+  "description": "数据 mock",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-sad-lab/my-mock.git"
+  },
+  "keywords": [
+    "data",
+    "mock"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-sad-lab/my-mock/issues"
+  },
+  "homepage": "https://github.com/a-sad-lab/my-mock#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "pm2": "^4.5.0"
+  }
+}
