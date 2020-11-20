@@ -10,7 +10,8 @@ app.use(express.json()) // for parsing application/json
 // app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 app.get('/', function(req, res) {
-  res.send('Hello World!')
+  console.log(req.query)
+  res.type('text/javascript').end()
 })
 
 app.get('/null', function(req, res) {
@@ -26,5 +27,7 @@ app.get('/where', function(req, res) {
 })
 
 app.post('/push', function(req, res) {
-  res.send(`OK! Got it.[${req.body.gift}]`)
+  console.log('rpc???', req.body.gift)
+  res.end()
+  // res.send(`OK! Got it.[${req.body.gift}]`)
 })
